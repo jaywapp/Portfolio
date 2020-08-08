@@ -5,15 +5,17 @@
   width: auto;
   height: 500px;
   display: grid;
-  grid-template-columns: 8% 50% 10% 10% 10% 10%;
+  grid-template-columns: 20% 30% 10% 10% 10% 20%;
   grid-gap: 10px;
   grid-auto-rows: minmax(100px, auto);
 }
+
 /* 초안 개발시 흰 배경에서 보이기 위함 */
 .grid div{
   background-color: #FED057;
   opacity : 0.3;
   font-weight: normal;
+  text-align: center;
 }
 
 .grid div:hover{

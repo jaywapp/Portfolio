@@ -5,7 +5,7 @@
   width: auto;
   height: 500px;
   display: grid;
-  grid-template-columns: 8% 40% 40% 10%;
+  grid-template-columns: 20% 30% 30% 20%;
   grid-gap: 10px;
   grid-auto-rows: minmax(100px, auto);
 }

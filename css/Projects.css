@@ -25,13 +25,12 @@
 
 .project_grid #image{
   grid-row: 2;
-  background-color: #FED057;
+  max-height: 100%;
   opacity: 0.6;
-  height: 150px;
+  text-align: center;
 }
 
 .project_grid #image:hover{
-  background-color: #FED057;
   opacity: 1;
 }
 
@@ -39,4 +38,5 @@
   grid-row: 3;
   color: white;
   opacity: 0.4;
+  text-align: center;
 }

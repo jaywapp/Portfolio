@@ -1,3 +1,5 @@
+/*eslint-env browser */
+
 function FromRole(role) {
     let div = document.createElement("div");
     div.setAttribute("id", "role");
@@ -129,10 +131,7 @@ function Write( roles )
 }
 
 const fs = require('fs');
+const jsonFile = fs.readFileSync('Roles.json');
+const json = JSON.parse(jsonFile);
 
-const jsonFile = fs.readFileSync('../roles/Roles.json', 'utf8');
-const jsonData = JSON.parse(jsonFile);
-
-let roles = jsonData.Roles;
-
-Write(roles);
+Write(json.Roles);

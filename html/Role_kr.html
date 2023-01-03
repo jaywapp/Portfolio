@@ -7,7 +7,8 @@
     <div id="menuitem" class="home" OnClick="location.href ='../Home_kr.html'" style="cursor:pointer;">Home</div>
     <div id="menuitem" class="about" OnClick="location.href ='About_kr.html'" style="cursor:pointer;">About</div>
     <div id="menuitem" class="role" OnClick="location.href ='Role_kr.html'" style="cursor:pointer;">Role</div>
-    <div id="menuitem" class="projects" OnClick="location.href ='Projects_kr.html'" style="cursor:pointer;">Projects</div>
+    <div id="menuitem" class="projects" OnClick="location.href ='Projects_kr.html'" style="cursor:pointer;">Projects
+    </div>
     <div id="menuitem" class="contact" OnClick="location.href ='Contact_kr.html'" style="cursor:pointer;">Contact</div>
   </div>
 </head>
@@ -15,257 +16,134 @@
 <body>
   <link rel="stylesheet" href="..\css\Role.css" type="text/css">
   <style type="text/css">
-     a:link { color: red; text-decoration: none;}
-     a:visited { color: black; text-decoration: none;}
+    a:link {
+      color: red;
+      text-decoration: none;
+    }
+
+    a:visited {
+      color: black;
+      text-decoration: none;
+    }
   </style>
-  <div class="grid">
-    <div id="row">
-      <div id="year">2021</div>
-      <div id="itemlist">
-        <a href="https://jaywapp.notion.site/GTC-MES-f78d393536574add8add4c746b88b045">
-          <div id="item">
-            <div id="summary">
-              <div id="role">PCB 제조 솔루션</div>
-              <div id="company">펜타큐브</div>
-              <div id="comment">프로젝트 관리 및 개발</div>
-              <div id="term">2021.03 ~ </div>
-            </div>
-            <div id="detail">
-              <ul>
-                <li>Gerber, Neutral Interfacing</li>
-                <li>Plugin 구조 개발</li>
-                <li>Mounter PGM 기능 개발</li>
-                <li>작업지도서 기능 개발</li>
-                <li>BackupJig 기능 개발</li>
-                <li>Canvas 모듈 개발 (SkiaSharp)</li>
-                <li>Geometry 구조 개발</li>
-              </ul>
-            </div>
-          </div>
-        </a>
-      </div>
-    </div>
+  <div class="grid" id="grid">
+    <script type="text/javascript">
 
-    <div id="row">
-      <div id="year">2021</div>
-      <div id="itemlist">
-        <a href="https://www.notion.so/jaywapp/DRC-Rule-85a5923f1c1e4ac6b880dfe871ae1d71">
-          <div id="item">
-            <div id="summary">
-              <div id="role">공용 DRC DFE Rule 개발</div>
-              <div id="company">펜타큐브</div>
-              <div id="comment">프로젝트 관리 및 개발</div>
-              <div id="term">2020.10 ~ 2021.02</div>
-            </div>
-            <div id="detail">
-              <ul>
-                <li>DFE DRC Rule 21종 개발</li>
-              </ul>
-            </div>
-          </div>
-        </a>
-      </div>
-    </div>
+      let http = new XMLHttpRequest();
 
-    <div id="row">
-      <div id="year">2020</div>
-      <div id="itemlist">
-        <a href="https://www.notion.so/jaywapp/SK-Hynix-Strip-DRC-c3a27a20fd7044cfae09e26b404d01c9">
-          <div id="item">
-            <div id="summary">
-              <div id="role">SK Hynix StripDRC 담당자</div>
-              <div id="company">펜타큐브</div>
-              <div id="comment">프로젝트 관리 및 개발</div>
-              <div id="term">2020.03 ~ 2020.08</div>
-            </div>
-            <div id="detail">
-              <ul>
-                <li>PKG Strip Interface</li>
-                <li>Strip 관련 DRC Rule 15종 개발</li>
-              </ul>
-            </div>
-          </div>
-        </a>
-      </div>
-    </div>
+      http.onreadystatechange = function () {
+        if (http.readyState == 4 && http.status == 200) {
+          jsonfunc(this.responseText); //this = http
+        }
+      }
 
-    <div id="row">
-      <div id="year">2019</div>
-      <div id="itemlist">
-        <a href="https://www.notion.so/jaywapp/DRC-179fbb8d8a274f3e868db2e00eeec632">
-          <div id="item">
-            <div id="summary">
-              <div id="role">Hyndai Mobis DRC 적용</div>
-              <div id="company">펜타큐브</div>
-              <div id="comment">프로젝트 관리 및 개발</div>
-              <div id="term">2019.05 ~ 2020.02</div>
-            </div>
-            <div id="detail">
-              <ul>
-                <li>
-                  Mobis 적용 PCB DRC 구현
-                  <ul>
-                    <li>현대자동차 체크리스트(HKMC) 45종 자동화</li>
-                  </ul>
-                </li>
-                <li>
-                  PCB 도면 비교 솔루션 개발
-                  <ul>
-                    <li>PCB 도면내 부품 비교 기능</li>
-                    <li>비교 결과 Report 기능</li>
-                  </ul>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </a>
-      </div>
-    </div>
+      http.open("GET", 'Roles.json', true);
+      http.send();
 
-    <div id="row">
-      <div id="year">2018</div>
-      <div id="itemlist">
+      function CreateEmptyElement(tag, id){
+        var element = document.createElement(tag);
+        element.setAttribute("id", id);
 
-        <a href="https://www.notion.so/jaywapp/DFE-DRC-bc9a8bb918ef4ff89f7cd9a5b639d344">
-          <div id="item">
-            <div id="summary">
-              <div id="role">Samsung Network 사업부 DFE 개발</div>
-              <div id="company">펜타큐브</div>
-              <div id="comment">프로젝트 관리 및 개발</div>
-              <div id="term">2018.01 ~ 2018.08</div>
-            </div>
-            <div id="detail">
-              <ul>
-                <li>PCB 설계 DFE 체크리스트 24종 자동화</li>
-              </ul>
-            </div>
-          </div>
-        </a>
+        return element;
+      }
 
-        <a href="https://www.notion.so/jaywapp/SK-Hynix-Module-DFM-DRC-bd25f0b5ea004b50b73e57f7921f1424">
-          <div id="item">
-            <div id="summary">
-              <div id="role">Hynix Module DFM DRC 적용</div>
-              <div id="company">펜타큐브</div>
-              <div id="comment">프로젝트 관리 및 개발</div>
-              <div id="term">2018.01 ~ 2018.06</div>
-            </div>
-            <div id="detail">
-              <ul>
-                <li>Module 설계 체크리스트 13종 자동화</li>
-              </ul>
-            </div>
-          </div>
-        </a>
-      </div>
-    </div>
+      function CreateElement(tag, id, value){
+        
+        var element = document.createElement(tag);
+        element.setAttribute("id", id);
 
-    <div id="row">
-      <div id="year">2017</div>
-      <div id="itemlist">
-        <a href="https://www.notion.so/jaywapp/DFM-DRC-86ccbe3f04eb4870b38bfd2421c50a3c">
-          <div id="item">
-            <div id="summary">
-              <div id="role">Samsung Network 사업부 DFM DRC 개선 및 신규 개발</div>
-              <div id="company">펜타큐브</div>
-              <div id="comment">프로젝트 관리 및 개발</div>
-              <div id="term">2017.10 ~ 2018.02</div>
-            </div>
-            <div id="detail">
-              <ul>
-                <li>기존 자동화 항목에 대한 개선</li>
-                <li>신규 DFM 체크리스트 6종 자동화</li>
-              </ul>
-            </div>
-          </div>
-        </a>
+        var textElement = document.createTextNode(value);
+        element.append(textElement);
 
-        <a href="https://www.notion.so/jaywapp/FlexLM-License-Module-9fc2464caf4f4c41a0371e3863e665b3">
-          <div id="item">
-            <div id="summary">
-              <div id="role">FlexLM License Module 개발 및 적용</div>
-              <div id="company">펜타큐브</div>
-              <div id="comment">개발 및 적용, 안정화 작업</div>
-              <div id="term">2017.06 ~ 2017.12</div>
-            </div>
-            <div id="detail">
-              <ul>
-                <li>FlexLM API 적용</li>
-              </ul>
-            </div>
-          </div>
-        </a>
+        return element;
+      }
 
-        <a href="https://www.notion.so/jaywapp/SK-Hynix-PKG-DRC-42408859a2404fc8bfc99bbd0b1e4067">
-          <div id="item">
-            <div id="summary">
-              <div id="role">SK Hynix PKG DRC 개발</div>
-              <div id="company">펜타큐브</div>
-              <div id="comment">개발</div>
-              <div id="term">2017.03 ~ 2017.09</div>
-            </div>
-            <div id="detail">
-              <ul>
-                <li>PKG 체크리스트 (8종/28종) 자동화</li>
-              </ul>
-            </div>
-          </div>
-        </a>
-      </div>
-    </div>
+      function CreateSummary(json)
+      {
+        var role = CreateElement('div', 'role', json.Name);
+        var company = CreateElement('div', 'company', json.Company);
+        var comment = CreateElement('div', 'comment', json.Comment);
+        var term = CreateElement('div', 'term', json.Term);
 
-    <div id="row">
-      <div id="year">2016</div>
-      <div id="itemlist">
-          <a href="https://www.notion.so/jaywapp/af76164192fd4fc4992de58669820d2c">
-            <div id="item">
-              <div id="summary">
-                <div id="role">코딩 교육 (중등, 고등) 교육과정 개발</div>
-                <div id="company">DLAB</div>
-                <div id="comment">중, 고등학생을 대상으로 코딩 교육 과정을 개발</div>
-                <div id="term">2016.07 ~ 2016.12</div>
-              </div>
-              <div id="detail">
-                <ul></ul>
-              </div>
-            </div>
-          </a>
-          <a href="https://www.notion.so/jaywapp/af76164192fd4fc4992de58669820d2c">
-            <div id="item">
-              <div id="summary">
-                <div id="role">코딩 교육 (중등, 고등)</div>
-                <div id="company">DLAB</div>
-                <div id="comment">중, 고등학생을 대상으로 코딩 교육</div>
-                <div id="term">2016.07 ~ 2016.12</div>
-              </div>
-              <div id="detail">
-                <ul></ul>
-              </div>
-            </div>
-          </a>
-      </div>
-    </div>
+        var div = CreateEmptyElement('div', 'summary');
 
-    <div id="row">
-      <div id="year">2015</div>
-      <div id="itemlist">
-        <a href="https://www.notion.so/jaywapp/83abd604baf449b48ff9bbdad3402f7b">
-          <div id="item">
-            <div id="summary">
-              <div id="role">아주대병원 정보관리팀 야간 관리</div>
-              <div id="company">(주)스탭포유</div>
-              <div id="comment">서버 운용</div>
-              <div id="term">2015.06 ~ 2016.02</div>
-            </div>
-            <div id="detail">
-              <ul>
-                <li>야간 내 서버 운용</li>
-                <li>야간 내 전산 문제 지원 및 해결</li>
-              </ul>
-            </div>
-          </div>
-        </a>
-      </div>
-    </div>
+        div.append(role);
+        div.append(company);
+        div.append(comment);
+        div.append(term);
+
+        return div;
+      }
+
+      function CreateDetail(json)
+      {
+        var div = CreateEmptyElement('div', 'detail');
+        var ul = document.createElement('ul');
+
+        for(var i = 0; i < json.Items.length; i++){
+          var li = document.createElement('li');
+          var text = document.createTextNode(json.Items[i]);
+          
+          li.append(text);
+          ul.append(li);
+        }
+
+        div.append(ul);
+
+        return div;
+      }
+
+      function CreateItem(summary, detail)
+      {
+        var div = CreateEmptyElement('div', 'item');        
+        
+        div.append(summary);
+        div.append(detail);
+
+        return div;
+      }
+
+      function CreateLink(link, summary, detail){
+
+        var element = document.createElement('a');
+        element.setAttribute('href', link);
+
+        var item = CreateItem(summary, detail);
+        element.append(item);
+
+        return element;
+      }
+
+      function CreateItemList(link, summary, detail){
+
+        var div = CreateEmptyElement('div', 'itemList');
+        div.append(CreateLink(link, summary, detail));
+
+        return div;
+
+      }
+
+      function jsonfunc(jsonText) {
+
+        let json = JSON.parse(jsonText); // String -> json으로 변환
+
+        for(var i = 0; i< json.length; i++){
+          
+          const role = json[i];
+
+          const row = CreateEmptyElement('div', 'row');
+
+          const year = CreateElement('div', 'year', role.Year);
+          const summary = CreateSummary(role.Summary);
+          const detail = CreateDetail(role.Detail);
+          const itemList = CreateItemList(role.Link, summary, detail);
+
+          row.append(year);
+          row.append(itemList);
+
+          document.getElementById('grid').append(row);
+        }
+      }
+    </script>
   </div>
 </body>

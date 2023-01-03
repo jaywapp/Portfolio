@@ -7,7 +7,8 @@
     <div id="menuitem" class="home" OnClick="location.href ='../Home_kr.html'" style="cursor:pointer;">Home</div>
     <div id="menuitem" class="about" OnClick="location.href ='About_kr.html'" style="cursor:pointer;">About</div>
     <div id="menuitem" class="role" OnClick="location.href ='Role_kr.html'" style="cursor:pointer;">Role</div>
-    <div id="menuitem" class="projects" OnClick="location.href ='Projects_kr.html'" style="cursor:pointer;">Projects</div>
+    <div id="menuitem" class="projects" OnClick="location.href ='Projects_kr.html'" style="cursor:pointer;">Projects
+    </div>
     <div id="menuitem" class="contact" OnClick="location.href ='Contact_kr.html'" style="cursor:pointer;">Contact</div>
   </div>
 </head>
@@ -15,11 +16,134 @@
 <body>
   <link rel="stylesheet" href="..\css\Role.css" type="text/css">
   <style type="text/css">
-     a:link { color: red; text-decoration: none;}
-     a:visited { color: black; text-decoration: none;}
+    a:link {
+      color: red;
+      text-decoration: none;
+    }
+
+    a:visited {
+      color: black;
+      text-decoration: none;
+    }
   </style>
-  <div class="grid">
-    <script src="../scripts/LoadRoles.js" type="">
-    </script>   
+  <div class="grid" id="grid">
+    <script type="text/javascript">
+
+      let http = new XMLHttpRequest();
+
+      http.onreadystatechange = function () {
+        if (http.readyState == 4 && http.status == 200) {
+          jsonfunc(this.responseText); //this = http
+        }
+      }
+
+      http.open("GET", 'Roles.json', true);
+      http.send();
+
+      function CreateEmptyElement(tag, id){
+        var element = document.createElement(tag);
+        element.setAttribute("id", id);
+
+        return element;
+      }
+
+      function CreateElement(tag, id, value){
+        
+        var element = document.createElement(tag);
+        element.setAttribute("id", id);
+
+        var textElement = document.createTextNode(value);
+        element.append(textElement);
+
+        return element;
+      }
+
+      function CreateSummary(json)
+      {
+        var role = CreateElement('div', 'role', json.Name);
+        var company = CreateElement('div', 'company', json.Company);
+        var comment = CreateElement('div', 'comment', json.Comment);
+        var term = CreateElement('div', 'term', json.Term);
+
+        var div = CreateEmptyElement('div', 'summary');
+
+        div.append(role);
+        div.append(company);
+        div.append(comment);
+        div.append(term);
+
+        return div;
+      }
+
+      function CreateDetail(json)
+      {
+        var div = CreateEmptyElement('div', 'detail');
+        var ul = document.createElement('ul');
+
+        for(var i = 0; i < json.Items.length; i++){
+          var li = document.createElement('li');
+          var text = document.createTextNode(json.Items[i]);
+          
+          li.append(text);
+          ul.append(li);
+        }
+
+        div.append(ul);
+
+        return div;
+      }
+
+      function CreateItem(summary, detail)
+      {
+        var div = CreateEmptyElement('div', 'item');        
+        
+        div.append(summary);
+        div.append(detail);
+
+        return div;
+      }
+
+      function CreateLink(link, summary, detail){
+
+        var element = document.createElement('a');
+        element.setAttribute('href', link);
+
+        var item = CreateItem(summary, detail);
+        element.append(item);
+
+        return element;
+      }
+
+      function CreateItemList(link, summary, detail){
+
+        var div = CreateEmptyElement('div', 'itemList');
+        div.append(CreateLink(link, summary, detail));
+
+        return div;
+
+      }
+
+      function jsonfunc(jsonText) {
+
+        let json = JSON.parse(jsonText); // String -> json으로 변환
+
+        for(var i = 0; i< json.length; i++){
+          
+          const role = json[i];
+
+          const row = CreateEmptyElement('div', 'row');
+
+          const year = CreateElement('div', 'year', role.Year);
+          const summary = CreateSummary(role.Summary);
+          const detail = CreateDetail(role.Detail);
+          const itemList = CreateItemList(role.Link, summary, detail);
+
+          row.append(year);
+          row.append(itemList);
+
+          document.getElementById('grid').append(row);
+        }
+      }
+    </script>
   </div>
 </body>

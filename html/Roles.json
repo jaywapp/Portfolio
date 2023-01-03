@@ -1,0 +1,179 @@
+[
+  {
+    "Year": "2015",
+    "Link": "https://www.notion.so/jaywapp/83abd604baf449b48ff9bbdad3402f7b",
+    "Summary": {
+      "Name": "아주대병원 정보관리팀 야간 관리",
+      "Company": "(주)스탭포유",
+      "Comment": "서버 운용",
+      "Term": "2015.06 ~ 2016.02"
+    },
+    "Detail": {
+      "Items": [
+        "야간 내 서버 운용",
+        "야간 내 전산 문제 지원 및 해결"
+      ]
+    }
+  },
+  {
+    "Year": "2016",
+    "Link": "https://www.notion.so/jaywapp/af76164192fd4fc4992de58669820d2c",
+    "Summary": {
+      "Name": "코딩 교육 (중등, 고등) 및 교육과정 개발",
+      "Company": "DLAB",
+      "Comment": "중, 고등학생을 대상으로 코딩 교육 과정 개발 및 교육",
+      "Term": "2016.07 ~ 2016.12"
+    },
+    "Detail": {
+      "Items": [
+        "교육",
+        "교육 과정 연구 및 개발"
+      ]
+    }
+  },
+  {
+    "Year": "2017",
+    "Link": "https://www.notion.so/jaywapp/SK-Hynix-PKG-DRC-42408859a2404fc8bfc99bbd0b1e4067",
+    "Summary": {
+      "Name": "SK Hynix PKG DRC 개발",
+      "Company": "펜타큐브",
+      "Comment": "개발",
+      "Term": "2017.03 ~ 2017.09"
+    },
+    "Detail": {
+      "Items": [
+      "PKG 체크리스트 (8종/28종) 자동화"
+      ]
+    }
+  },
+  {
+    "Year": "2017",
+    "Link": "https://www.notion.so/jaywapp/FlexLM-License-Module-9fc2464caf4f4c41a0371e3863e665b3",
+    "Summary": {
+      "Name": "FlexLM License Module 개발 및 적용",
+      "Company": "펜타큐브",
+      "Comment": "개발 및 적용, 안정화 작업",
+      "Term": "2017.06 ~ 2017.12"
+    },
+    "Detail": {
+      "Items": [
+        "FlexLM API 적용"
+      ]
+    }
+  },
+  {
+    "Year": "2017",
+    "Link": "https://www.notion.so/jaywapp/DFM-DRC-86ccbe3f04eb4870b38bfd2421c50a3c",
+    "Summary": {
+      "Name": "Samsung Network 사업부 DFM DRC 개선 및 신규 개발",
+      "Company": "펜타큐브",
+      "Comment": "프로젝트 관리 및 개발",
+      "Term": "2017.10 ~ 2018.02"
+    },
+    "Detail": {
+      "Items": [
+        "기존 자동화 항목에 대한 개선",
+        "신규 DFM 체크리스트 6종 자동화"
+      ]
+    }
+  },
+  {
+    "Year": "2018",
+    "Link": "https://www.notion.so/jaywapp/SK-Hynix-Module-DFM-DRC-bd25f0b5ea004b50b73e57f7921f1424",
+    "Summary": {
+      "Name": "Hynix Module DFM DRC 적용",
+      "Company": "펜타큐브",
+      "Comment": "프로젝트 관리 및 개발",
+      "Term": "2018.01 ~ 2018.06"
+    },
+    "Detail": {
+      "Items": [
+        "Module 설계 체크리스트 13종 자동화"
+      ]
+    }
+  },
+  {
+    "Year": "2018",
+    "Link": "https://www.notion.so/jaywapp/DFE-DRC-bc9a8bb918ef4ff89f7cd9a5b639d344",
+    "Summary": {
+      "Name": "Samsung Network 사업부 DFE 개발",
+      "Company": "펜타큐브",
+      "Comment": "프로젝트 관리 및 개발",
+      "Term": "2018.01 ~ 2018.08"
+    },
+    "Detail": {
+      "Items": [
+        "PCB 설계 DFE 체크리스트 24종 자동화"
+      ]
+    }
+  },
+  {
+    "Year": "2019",
+    "Link": "https://www.notion.so/jaywapp/DRC-179fbb8d8a274f3e868db2e00eeec632",
+    "Summary": {
+      "Name": "Hyndai Mobis DRC 적용",
+      "Company": "펜타큐브",
+      "Comment": "프로젝트 관리 및 개발",
+      "Term": "2019.05 ~ 2020.02"
+    },
+    "Detail": {
+      "Items": [
+        "현대자동차 체크리스트(HKMC) 45종 자동화",
+        "PCB 도면내 부품 비교 기능",
+        "비교 결과 Report 기능"
+      ]
+    }
+  },
+  {
+    "Year": "2020",
+    "Link": "https://www.notion.so/jaywapp/SK-Hynix-Strip-DRC-c3a27a20fd7044cfae09e26b404d01c9",
+    "Summary": {
+      "Name": "SK Hynix StripDRC 담당자",
+      "Company": "펜타큐브",
+      "Comment": "프로젝트 관리 및 개발",
+      "Term": "2020.03 ~ 2020.08"
+    },
+    "Detail": {
+      "Items": [
+        "PKG Strip Interface",
+        "Strip 관련 DRC Rule 15종 개발"
+      ]
+    }
+  },
+  {
+    "Year": "2021",
+    "Link": "https://www.notion.so/jaywapp/DRC-Rule-85a5923f1c1e4ac6b880dfe871ae1d71",
+    "Summary": {
+      "Name": "공용 DRC DFE Rule 개발",
+      "Company": "펜타큐브",
+      "Comment": "프로젝트 관리 및 개발",
+      "Term": "2020.10 ~ 2021.02"
+    },
+    "Detail": {
+      "Items": [
+         "DFE DRC Rule 21종 개발"
+      ]
+    }
+  },
+  {
+    "Year": "2021",
+    "Link": "https://jaywapp.notion.site/GTC-MES-f78d393536574add8add4c746b88b045",
+    "Summary": {
+      "Name": "PCB 제조 솔루션",
+      "Company": "펜타큐브",
+      "Comment": "프로젝트 관리 및 개발",
+      "Term": "2021.03 ~"
+    },
+    "Detail": {
+      "Items": [
+        "Gerber, Neutral Interfacing",
+        "Plugin 구조 개발",
+        "Mounter PGM 기능 개발",
+        "작업지도서 기능 개발",
+        "BackupJig 기능 개발",
+        "Canvas 모듈 개발 (SkiaSharp)",
+        "Geometry 구조 개발"
+      ]
+    }
+  }
+]

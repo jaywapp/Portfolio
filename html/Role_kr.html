@@ -127,7 +127,7 @@
 
         let json = JSON.parse(jsonText); // String -> json으로 변환
 
-        for(var i = 0; i< json.length; i++){
+        for(var i = json.length - 1; i>= 0; i--){
           
           const role = json[i];
 

@@ -1,0 +1,22 @@
+[
+    { 
+        "title" : "이름", 
+        "content" : "박준영"
+    },
+    { 
+        "title" : "생년월일", 
+        "content" : "1991.08.16"
+    },
+    { 
+        "title" : "지역", 
+        "content" : "경기도 수원"
+    },
+    { 
+        "title" : "좋아하는 것", 
+        "content" : "여행, 음악, 스포츠"
+    },
+    { 
+        "title" : "Mail", 
+        "content" : "jaywapp16@gmail.com"
+    }
+]

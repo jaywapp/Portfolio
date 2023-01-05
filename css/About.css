@@ -24,30 +24,30 @@
 
 .grid .intro {
   grid-column: 1;
-  grid-row: : 2;
+  grid-row: 2;
 }
 
 .grid .education {
   grid-column: 2;
-  grid-row: : 2;
+  grid-row: 2;
 }
 
 .grid .company {
   grid-column: 3;
-  grid-row: : 2;
+  grid-row: 2;
 }
 
 /* -------------------------- */
 
 /* ------- sub grid -------- */
-.grid #sub_grid{
+.grid #sub_grid {
   align-self: flex-start center;
   text-align: center;
   display: grid;
   grid-template-columns: 1fr;
   grid-gap: 50px;
   -webkit-animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
-          animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+  animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
 }
 
 .grid #sub_grid #title {
@@ -59,8 +59,8 @@
 
 /* ------- intro item -------- */
 
-.grid #sub_grid #intro_item{
-    height: 50px;
+.grid #sub_grid #intro_item {
+  height: 50px;
 }
 
 .grid #sub_grid #intro_item:hover {
@@ -68,13 +68,13 @@
   background-color: #606160;
 }
 
-.grid #sub_grid #intro_item #title{
+.grid #sub_grid #intro_item #title {
   color: #FED057;
   opacity: 0.7;
   font-size: 15;
 }
 
-.grid #sub_grid #intro_item #content{
+.grid #sub_grid #intro_item #content {
   color: white;
   opacity: 1;
   font-size: 20;
@@ -85,7 +85,7 @@
 
 /* ------- timeline item -------- */
 
-.grid #sub_grid #timeline_item{
+.grid #sub_grid #timeline_item {
   height: 70px;
 }
 
@@ -94,21 +94,22 @@
   background-color: #606160;
 }
 
-.grid #sub_grid #timeline_item #title{
+.grid #sub_grid #timeline_item #title {
   color: white;
   opacity: 1;
   font-size: 20;
 }
 
-.grid #sub_grid #timeline_item #date{
+.grid #sub_grid #timeline_item #date {
   color: white;
   opacity: 0.7;
   font-size: 15;
 }
 
-.grid #sub_grid #timeline_item #comment{
+.grid #sub_grid #timeline_item #comment {
   color: #FED057;
   opacity: 0.7;
   font-size: 15;
 }
+
 /* -------------------------- */

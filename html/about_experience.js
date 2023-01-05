@@ -40,7 +40,7 @@ function write(jsonText) {
 
     var compary = document.createElement('div');
     compary.setAttribute('id', 'sub_grid');
-    compary.setAttribute('class', 'compary');
+    compary.setAttribute('class', 'company');
 
     compary.append(createTextElement('div', 'title', '경력'));
 

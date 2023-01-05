@@ -18,7 +18,7 @@ function craeteTypeElement(id, item) {
     return div;
 }
 
-const path = '../data/intro.json';
+const path = '../data/intro_k.json';
 
 let http = new XMLHttpRequest();
 

@@ -1,0 +1,22 @@
+[
+    { 
+        "title" : "Name", 
+        "content" : "Junyoung Park"
+    },
+    { 
+        "title" : "Birth", 
+        "content" : "1991.08.16"
+    },
+    { 
+        "title" : "Address", 
+        "content" : "Suwon-si, Gyeonggi-do"
+    },
+    { 
+        "title" : "Favorite", 
+        "content" : "Trip, Music, Sports"
+    },
+    { 
+        "title" : "Mail", 
+        "content" : "jaywapp16@gmail.com"
+    }
+]

@@ -1,0 +1,178 @@
+[
+  {
+    "Year": "2015",
+    "Link": "https://www.notion.so/jaywapp/Server-Operating-and-O-A-e4ba4c4cdcd64281b445951f6c0170e1",
+    "Summary": {
+      "Name": "Server Operator in Ajou University Hospital",
+      "Company": "Step for U",
+      "Comment": "Server Operating",
+      "Term": "2015.06 ~ 2016.02"
+    },
+    "Detail": {
+      "Items": [
+        "Server Operating in night",
+        "O/A in night"
+      ]
+    }
+  },
+  {
+    "Year": "2016",
+    "Link": "https://www.notion.so/jaywapp/Education-of-Software-14c7efc39e5c48dbb5a9a701c4d487ab",
+    "Summary": {
+      "Name": "Development Education SW for student",
+      "Company": "DLAB",
+      "Comment": "Development education SW for student in middleschool, Highschool",
+      "Term": "2016.07 ~ 2016.12"
+    },
+    "Detail": {
+      "Items": [
+        "Teaching",
+        "Development of education"
+      ]
+    }
+  },
+  {
+    "Year": "2017",
+    "Link": "https://www.notion.so/jaywapp/Development-for-Package-DRC-d13e4cbddb8d465cb5d35c8f51fcf8a0",
+    "Summary": {
+      "Name": "SK Hynix PKG DRC Development",
+      "Company": "Penta-Cube",
+      "Comment": "SW Development",
+      "Term": "2017.03 ~ 2017.09"
+    },
+    "Detail": {
+      "Items": [
+      "PKG Checklist automation (8 of 28)"
+      ]
+    }
+  },
+  {
+    "Year": "2017",
+    "Link": "https://www.notion.so/jaywapp/FlexLM-API-47da87f6b5c64f369b56853203fa671a",
+    "Summary": {
+      "Name": "FlexLM License Module Development and Applying",
+      "Company": "Penta-Cube",
+      "Comment": "Development, Applying and maintenance",
+      "Term": "2017.06 ~ 2017.12"
+    },
+    "Detail": {
+      "Items": [
+        "Applying FlexLM API"
+      ]
+    }
+  },
+  {
+    "Year": "2017",
+    "Link": "https://www.notion.so/jaywapp/Development-for-DFM-DRC-282a7dc1df7f4c2885220ceb1143d582",
+    "Summary": {
+      "Name": "Improvement of DFM DRC and Development for Samsung Network",
+      "Company": "Penta-Cube",
+      "Comment": "Managing Project, Development",
+      "Term": "2017.10 ~ 2018.02"
+    },
+    "Detail": {
+      "Items": [
+        "Maintenance Old DFM Checklist Automation",
+        "Development New DFM Checklist Automation (6)"
+      ]
+    }
+  },
+  {
+    "Year": "2018",
+    "Link": "https://www.notion.so/jaywapp/Development-for-DFM-DRC-fe8de855d39c479cae70d9c5d03d0f3e",
+    "Summary": {
+      "Name": "Development of DFM DRC for SK Hynix Module",
+      "Company": "Penta-Cube",
+      "Comment": "Managing Project, Development",
+      "Term": "2018.01 ~ 2018.06"
+    },
+    "Detail": {
+      "Items": [
+        "Checklist Automation (13)"
+      ]
+    }
+  },
+  {
+    "Year": "2018",
+    "Link": "https://www.notion.so/jaywapp/Development-of-DFE-DRC-afeee4f4f94944c09693e15b9a6cd027",
+    "Summary": {
+      "Name": "Development of DFE DRC for Samsung Network",
+      "Company": "Penta-Cube",
+      "Comment": "Managing Project, Development",
+      "Term": "2018.01 ~ 2018.08"
+    },
+    "Detail": {
+      "Items": [
+        "PCB Checklist Automation (24)"
+      ]
+    }
+  },
+  {
+    "Year": "2019",
+    "Link": "https://www.notion.so/jaywapp/Development-of-DRC-55204ef3d71848339779899dbdbc8499",
+    "Summary": {
+      "Name": "Development of DRC for Hyudai Mobis",
+      "Company": "Penta-Cube",
+      "Comment": "Managing Project, Development",
+      "Term": "2019.05 ~ 2020.02"
+    },
+    "Detail": {
+      "Items": [
+        "Hyndai Automotive Checklist(HKMC) Automation (45)",
+        "Development of PCB Comparing Solution",
+      ]
+    }
+  },
+  {
+    "Year": "2020",
+    "Link": "https://www.notion.so/jaywapp/Development-of-Strip-DRC-27612e4395234d92b4199d96c36d26f9",
+    "Summary": {
+      "Name": "Development of Strip DRC for SK Hynix Package",
+      "Company": "Penta-Cube",
+      "Comment": "Managing Project, Development",
+      "Term": "2020.03 ~ 2020.08"
+    },
+    "Detail": {
+      "Items": [
+        "PKG Strip Interface",
+        "Development of DRC Rule about Strip (15)"
+      ]
+    }
+  },
+  {
+    "Year": "2021",
+    "Link": "https://www.notion.so/jaywapp/Development-of-Standard-DFE-DRC-Rule-5256421e5ed54e76a63ed7af48556f11",
+    "Summary": {
+      "Name": "Development of Pentacube DRC (DFE)",
+      "Company": "Penta-Cube",
+      "Comment": "Managing Project, Development",
+      "Term": "2020.10 ~ 2021.02"
+    },
+    "Detail": {
+      "Items": [
+         "Development of DRC (DFE) (21)"
+      ]
+    }
+  },
+  {
+    "Year": "2021",
+    "Link": "https://www.notion.so/jaywapp/Development-of-Manufacturing-Solution-with-MES-e92928dc809f430f827db1f9bc036fd2",
+    "Summary": {
+      "Name": "Development of Solution for PCB Manufacturing",
+      "Company": "Penta-Cube",
+      "Comment": "Managing Project, Development",
+      "Term": "2021.03 ~"
+    },
+    "Detail": {
+      "Items": [
+        "Gerber, Neutral Interfacing",
+        "Architecturing Plugin",
+        "Development of Mounter PGM function",
+        "Development of Work Instruction function",
+        "Development of Backup Jig Automation function",
+        "Development of Canvas Module (SkiaSharp)",
+        "Development of Geometry Architecture"
+      ]
+    }
+  }
+]
